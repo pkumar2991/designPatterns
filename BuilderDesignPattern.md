@@ -1,15 +1,16 @@
 # Design Patterns
 ## Builder Design Pattern (Creational Design Pattern)
+
 ### When to use Builder design pattern?
 Builder design pattern can be used in following cases:
-* when creation an object of a class is a complex process
-* Suppose are number of fields that need to be provided while creating an object even though only few of them are required. This can be done by telescoping constructor or using getter/setters but it leads to runtime error. While calling constructor, if the parameters are passed in incorrect sequence, there would be no compile error but at runtime reproduce expected behavior. So to avoid these error, *Builder design Pattern* would be right choice.
+* when creation of an object of a class is a complex process
+* Suppose there are number of fields that need to be provided while creating an object even though only few of them are required. We can avoid providing all fields by telescoping constructor or using getter/setters but it leads to runtime error. While calling constructor, if the parameters are passed in incorrect sequence, there would be no compile error but at runtime we can get expected behavior. So to avoid these errors, *Builder design Pattern* would be the right choice.
 
 
 #### Secenario - 1
-**Example -** Car company decided to launch two modal of Car -*Sedan* and *SUV*. The process of manufacturning these cars is very complex. An individual has to follow the process and if anything missed there will be defect in car introduced. So company has released a manual which have all the process and precautions that need to take care while manufacturing the car.
+**Example -** Car company decided to launch two modal of Car -*Sedan* and *SUV*. The process of manufacturning of the Car is very complex. An individual has to follow the right process to get a Car. So company has released a manual which have all the processes and precautions that need to take care while manufacturing the Car.
 
-Let's creat a car class.
+Let's creat a Car class.
 
 ```java
 
@@ -85,7 +86,7 @@ class Car {
     }
 }
 ```
-Now, we have created the Car class. Now, lets gather all the steps that need to be taken while creating car. *CarBuilder* interface has methods which will be executed while manufacturing car.
+Now, we have created the Car class. Now, let note down all the required steps, may be not in correct sequence.  *CarBuilder* interface has methods that all Car builder need to implement.
 
 ```java
 interface CarBuilder {
@@ -188,9 +189,8 @@ class SUVCarBuilder implements CarBuilder {
     }
 }
 ```
-So far, we are have Car and two different modals of Car. We can create car now using these car builders but we must need to know the sequence of steps. This creates dependecy on client that client must aware about the process and if any change happens in the car manufacuring process, car company must let client know about the updated process. We can get rid off this dependency and follow the manual provided by the company. If any change happens in future in the process, manual would be updated and client can refer that and update at only one place. 
+So far, we have Car and its two different modals. Car builders must need to know the sequence of steps to get the Car ready. If doesn't know, then we need to have someone who knows the correct sequence i.e. called as Director, here it is *CarDirector*.
 
-Here, we have CarDirector which follows the Car Manual and follow the process.
 ```java
 class CarDirector {
     CarBuilder carBuilder;
