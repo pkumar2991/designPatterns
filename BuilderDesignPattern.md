@@ -1,22 +1,17 @@
 # Design Patterns
 ## Builder Design Pattern (Creational Design Pattern)
-....java
-class BuilderDesignPattern {
-    public static void main(String[] args) {
-        CarBuilder carBuilder = new SUVCarBuilder();
-        CarDirector carDirector = new CarDirector(carBuilder);
-        carDirector.build();
-        Car car = carBuilder.getCar();
-        System.out.println(car);
+### When to use Builder design pattern?
+Builder design pattern can be used in following cases:
+* when creation an object of a class is a complex process
+* Suppose are number of fields that need to be provided while creating an object even though only few of them are required. This can be done by telescoping constructor or using getter/setters but it leads to runtime error. While calling constructor, if the parameters are passed in incorrect sequence, there would be no compile error but at runtime reproduce expected behavior. So to avoid these error, *Builder design Pattern* would be right choice.
 
-        Form.FormBuilder formBuilder = new Form.FormBuilder("Prabhakar","kumar","9686987208");
-        formBuilder.addEmail("prabha.ana28@gmail.com");
-        formBuilder.addCity("Gurgaon");
-        Form form = formBuilder.build();
-        System.out.println(form);
 
-    }
-}
+#### Secenario - 1
+**Example -** Car company decided to launch two modal of Car -*Sedan* and *SUV*. The process of manufacturning these cars is very complex. An individual has to follow the process and if anything missed there will be defect in car introduced. So company has released a manual which have all the process and precautions that need to take care while manufacturing the car.
+
+Let's creat a car class.
+
+```java
 
 class Car {
     private String name;
@@ -89,7 +84,10 @@ class Car {
                 '}';
     }
 }
+```
+Now, we have created the Car class. Now, lets gather all the steps that need to be taken while creating car. *CarBuilder* interface has methods which will be executed while manufacturing car.
 
+```java
 interface CarBuilder {
 
     void addName();
@@ -106,6 +104,10 @@ interface CarBuilder {
 
     Car getCar();
 }
+```
+*SedanCarBuilder* and *SUVCarBuilder* are two differnt modals of Car.
+
+```java
 
 class SedanCarBuilder implements CarBuilder {
     Car car = new Car();
@@ -185,7 +187,11 @@ class SUVCarBuilder implements CarBuilder {
         return car;
     }
 }
+```
+So far, we are have Car and two different modals of Car. We can create car now using these car builders but we must need to know the sequence of steps. This creates dependecy on client that client must aware about the process and if any change happens in the car manufacuring process, car company must let client know about the updated process. We can get rid off this dependency and follow the manual provided by the company. If any change happens in future in the process, manual would be updated and client can refer that and update at only one place. 
 
+Here, we have CarDirector which follows the Car Manual and follow the process.
+```java
 class CarDirector {
     CarBuilder carBuilder;
 
@@ -194,7 +200,7 @@ class CarDirector {
     }
 
     public void build() {
-//        Car Decorator knows the process of building specific car
+//  Car Decorator knows the process of building specific car
         carBuilder.addName();
         carBuilder.addColor();
         carBuilder.addWheels();
@@ -204,6 +210,20 @@ class CarDirector {
     }
 }
 
+class BuilderDesignPattern {
+    public static void main(String[] args) {
+        CarBuilder carBuilder = new SUVCarBuilder();
+        CarDirector carDirector = new CarDirector(carBuilder);
+        carDirector.build();
+        Car car = carBuilder.getCar();
+        System.out.println(car);
+    }
+}
+```
+Using CarDecorator to get the manufactured car turns the complex process into simple process.
+
+#### Secenario - 2
+```java
 class Form{
     private String fName;
     private String lName;
@@ -288,3 +308,4 @@ class Form{
                 '}';
     }
 }
+```
