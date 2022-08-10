@@ -1,5 +1,4 @@
-# Design Patterns
-## Builder Design Pattern (Creational Design Pattern)
+# Builder Design Pattern (Creational Design Pattern)
 
 ### When to use Builder design pattern?
 Builder design pattern can be used in following cases:
