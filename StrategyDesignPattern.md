@@ -3,7 +3,7 @@
 >The Strategy Design Pattern defines a family of algorithms, encapsulating each one, and making them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
 
 ### Problem
-In the  current era, everything is data driven  which results huge volume of data getting generated every second. These data must be stored somewhere. So, storing of data is a major problem for giant companies. So, they compress the file before storing them to the storage and uncompress them on demand. They use different file compression technique for this purpose.
+In the  current era, everything is data driven  which results huge volume of data getting generated every second. These data must be stored somewhere. So, storing data is a major problem for giant companies. So, they compress the file before storing them to the storage and uncompress them on demand. They use different file compression technique for this purpose.
 
 There could be many compression techniques. Let's build a design for a client to use these techniques.
 
@@ -104,7 +104,7 @@ public static void main(String[] args) {
 }
 ```
 
-Now, if new alogrithm is developed by an expert (reduce file size by 60%) then to append that logic into this code would be easy. 
+Now, if new alogrithm is developed by an expert (reduce file size by 80%) then to append that logic into this code would be easy. 
 - Create a **CompressFileAlgo4** and implements **ICompressFile** interface
 - Write the new alogrithm definition in the doCompress() method
 - Let client use this new algorithm for compressing their file
@@ -113,7 +113,7 @@ Now, if new alogrithm is developed by an expert (reduce file size by 60%) then t
 class CompressFileAlgo4 implements ICompressFile {  
     @Override  
     public void doCompress() {  
-        System.out.println("Compressed file size is 60% lesser than actual size.");  
+        System.out.println("Compressed file size is 80% lesser than actual size.");  
     }  
 }
 ```
