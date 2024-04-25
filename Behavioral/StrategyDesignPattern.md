@@ -1,3 +1,4 @@
+#BehavioralDP 
 # Strategy Desgin Pattern (Behavioral Pattern)
 ### Definition
 >The Strategy Design Pattern defines a family of algorithms, encapsulating each one, and making them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
