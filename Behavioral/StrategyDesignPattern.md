@@ -283,4 +283,4 @@ public class StrategyDesignPattern {
 For each type of laptop, processing mechanism can be decided at runtime. If there is new mechanism invented, there is no need to modify the existing code which follows the Open for extension and closed for modification principle.
 
 ### Summary
-The Strategy design pattern is a behavioral design pattern that allows you to define a family of algorithms, encapsulate each one of them, and make them interchangeable. This pattern lets the algorithm vary independently from clients that use it.
+The Strategy design pattern is like having different tools in a toolbox for a specific job. You can swap out tools (strategies) depending on what you need to do without changing how you use them. It keeps your code flexible and easy to maintain by separating the implementation details of different algorithms from the code that uses them.
