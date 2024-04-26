@@ -32,6 +32,28 @@ class Laptop {
 	}
 }
 
+class SimpleLaptop extends Laptop {
+
+	public SimpleLaptop(ProcessingStrategy strategy) {
+		super(strategy);
+	}
+}
+
+class ProfessionalLaptop extends Laptop {
+
+	public ProfessionalLaptop(ProcessingStrategy strategy) {
+		super(strategy);
+	}
+
+}
+
+class GamingLaptop extends Laptop {
+
+	public GamingLaptop(ProcessingStrategy strategy) {
+		super(strategy);
+	}
+}
+
 interface ProcessingStrategy {
 	void processInstructions();
 }
@@ -63,24 +85,3 @@ class SuperProcessingStrategy implements ProcessingStrategy {
 
 }
 
-class SimpleLaptop extends Laptop {
-
-	public SimpleLaptop(ProcessingStrategy strategy) {
-		super(strategy);
-	}
-}
-
-class ProfessionalLaptop extends Laptop {
-
-	public ProfessionalLaptop(ProcessingStrategy strategy) {
-		super(strategy);
-	}
-
-}
-
-class GamingLaptop extends Laptop {
-
-	public GamingLaptop(ProcessingStrategy strategy) {
-		super(strategy);
-	}
-}
