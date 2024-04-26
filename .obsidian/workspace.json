@@ -181,15 +181,22 @@
   },
   "active": "42b9877079b8b218",
   "lastOpenFiles": [
+    "codes/bin/com/designpattern/behavioral/SuperProcessingStrategy.class",
+    "codes/bin/com/designpattern/behavioral/NormalProcessingStrategy.class",
+    "codes/bin/com/designpattern/behavioral/ProfessionalProcessingStrategy.class",
+    "codes/bin/com/designpattern/behavioral/SimpleLaptop.class",
+    "codes/bin/com/designpattern/behavioral/GamingLaptop.class",
+    "codes/bin/com/designpattern/behavioral/Laptop.class",
+    "codes/bin/com/designpattern/behavioral/ProfessionalLaptop.class",
+    "codes/bin/com/designpattern/behavioral/ProcessingStrategy.class",
+    "codes/bin/com/designpattern/behavioral/StrategyDesignPattern.class",
+    "codes/src/com/designpattern/behavioral/StrategyDesignPattern.java",
+    "codes/bin/com/withoutdesignpattern/WithoutStrategyDesignPattern.class",
     "Creational/Prototype Design Pattern.md",
     "Behavioral/BuilderDesignPattern.md",
     "Behavioral/Chain Of Responsibility.md",
     "Behavioral/StrategyDesignPattern.md",
     "Behavioral/Template Design Pattern.md",
-    "Behavioral",
-    "Creational",
-    "2024-03-08.md",
-    "TemplateDesingPattern",
-    "ChainOfResponsibility"
+    "2024-03-08.md"
   ]
 }
