@@ -136,10 +136,10 @@ References:
 - https://refactoring.guru/design-patterns/strategy
 
 ***
-Another analogy which explains the Strategy design patter using class instead of interface.
+Another analogy which explains the Strategy design pattern using class instead of interface.
 
 ### Problem Statement
-Laptop manufacturer needs an application which helps to implement different strategies of processing instructions of a user by laptop. In future there could be new strategies discovered, so application should be flexible to accommodate this change.
+Laptop manufacturer needs an application which helps to implement different strategies of processing instructions of a user by laptop. In future, there could be new strategies discovered, so application should be flexible to accommodate this change.
 
 ### Naive Approach
 Laptop class having default processing Instructions and authentication mechanism.
