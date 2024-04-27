@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Behavioral/StrategyDesignPattern.md",
+                "file": "Behavioral/Observer Design Pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Behavioral/StrategyDesignPattern.md",
+                "file": "Behavioral/Observer Design Pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Behavioral/StrategyDesignPattern.md",
+                "file": "Behavioral/Observer Design Pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Behavioral/StrategyDesignPattern.md"
+                "file": "Behavioral/Observer Design Pattern.md"
               }
             }
           }
@@ -181,21 +181,21 @@
   },
   "active": "42b9877079b8b218",
   "lastOpenFiles": [
+    "Behavioral/StrategyDesignPattern.md",
+    "Behavioral/Observer Design Pattern.md",
+    "codes/bin/com/designpattern/behavioral/SmartTvObserver.class",
+    "codes/bin/com/designpattern/behavioral/SmartTvObservable.class",
+    "codes/bin/com/designpattern/behavioral/AcObserver.class",
+    "codes/bin/com/designpattern/behavioral/AcObservable.class",
+    "codes/bin/com/designpattern/behavioral/Observer.class",
+    "codes/bin/com/designpattern/behavioral/Observable.class",
+    "codes/bin/com/designpattern/behavioral/ObserverDesignPattern.class",
+    "codes/src/com/designpattern/behavioral/ObserverDesignPattern.java",
     "codes/bin/com/designpattern/behavioral/SuperProcessingStrategy.class",
     "codes/bin/com/designpattern/behavioral/NormalProcessingStrategy.class",
-    "codes/bin/com/designpattern/behavioral/ProfessionalProcessingStrategy.class",
-    "codes/bin/com/designpattern/behavioral/SimpleLaptop.class",
-    "codes/bin/com/designpattern/behavioral/GamingLaptop.class",
-    "codes/bin/com/designpattern/behavioral/Laptop.class",
-    "codes/bin/com/designpattern/behavioral/ProfessionalLaptop.class",
-    "codes/bin/com/designpattern/behavioral/ProcessingStrategy.class",
-    "codes/bin/com/designpattern/behavioral/StrategyDesignPattern.class",
-    "codes/src/com/designpattern/behavioral/StrategyDesignPattern.java",
-    "codes/bin/com/withoutdesignpattern/WithoutStrategyDesignPattern.class",
     "Creational/Prototype Design Pattern.md",
     "Behavioral/BuilderDesignPattern.md",
     "Behavioral/Chain Of Responsibility.md",
-    "Behavioral/StrategyDesignPattern.md",
     "Behavioral/Template Design Pattern.md",
     "2024-03-08.md"
   ]
