@@ -10,6 +10,8 @@ It would be very complex solution we try to build the system with this approach.
 
 Let's build this system using Observer Design Pattern.  
 
+### Better Approach
+
 Create Observable interface.
 ```java
 interface Observable {

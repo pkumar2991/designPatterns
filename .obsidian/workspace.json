@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Behavioral/Observer Design Pattern.md",
+                "file": "Structural/Decorator Design Pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Behavioral/Observer Design Pattern.md",
+                "file": "Structural/Decorator Design Pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Behavioral/Observer Design Pattern.md",
+                "file": "Structural/Decorator Design Pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Behavioral/Observer Design Pattern.md"
+                "file": "Structural/Decorator Design Pattern.md"
               }
             }
           }
@@ -179,20 +179,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "42b9877079b8b218",
+  "active": "8b27d6839cb5114c",
   "lastOpenFiles": [
-    "Behavioral/StrategyDesignPattern.md",
+    "Structural",
     "Behavioral/Observer Design Pattern.md",
-    "codes/bin/com/designpattern/behavioral/SmartTvObserver.class",
-    "codes/bin/com/designpattern/behavioral/SmartTvObservable.class",
-    "codes/bin/com/designpattern/behavioral/AcObserver.class",
-    "codes/bin/com/designpattern/behavioral/AcObservable.class",
-    "codes/bin/com/designpattern/behavioral/Observer.class",
-    "codes/bin/com/designpattern/behavioral/Observable.class",
-    "codes/bin/com/designpattern/behavioral/ObserverDesignPattern.class",
-    "codes/src/com/designpattern/behavioral/ObserverDesignPattern.java",
-    "codes/bin/com/designpattern/behavioral/SuperProcessingStrategy.class",
-    "codes/bin/com/designpattern/behavioral/NormalProcessingStrategy.class",
+    "Structural/Decorator Design Pattern.md",
+    "zcodes/bin/com/designpattern/behavioral/TrackingDevice.class",
+    "zcodes/bin/com/designpattern/behavioral/MusicPlayer.class",
+    "zcodes/bin/com/designpattern/behavioral/FogLight.class",
+    "zcodes/bin/com/designpattern/behavioral/SportsCar.class",
+    "zcodes/bin/com/designpattern/behavioral/FamilyCar.class",
+    "zcodes/bin/com/designpattern/behavioral/CarDecorator.class",
+    "zcodes/bin/com/designpattern/behavioral/BaseCar.class",
+    "zcodes/bin/com/designpattern/behavioral/DecoratorDesignPattern.class",
+    "zcodes/src/com/designpattern/behavioral/DecoratorDesignPattern.java",
+    "zcodes/bin/com/withoutdesignpattern/SuvWithPowerfulEngine.class",
+    "Behavioral/StrategyDesignPattern.md",
     "Creational/Prototype Design Pattern.md",
     "Behavioral/BuilderDesignPattern.md",
     "Behavioral/Chain Of Responsibility.md",
