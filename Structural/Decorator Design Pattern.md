@@ -4,7 +4,7 @@
 >   The Decorator design pattern is a structural design pattern that allows behavior to be added to individual objects, either statically or dynamically, without affecting the behavior of other objects from the same class. It's useful when you need to add or alter the functionality of objects during runtime, avoiding the need to create multiple subclasses to accommodate all combinations of features.
 
 ### Problem Statement
-Jack has to buy a family car having fog light and tracking device, so he need to get the estimated price of the car. Later, he requested to install Music Player in the car. Now, Jack is looking for revised price. Unlike Jack, Terry is interested in Sports car with Music Player with Fog Light. 
+Jack has to buy a family car having fog light and tracking device, so he needs to get the estimated price of the car. Later, he requested to install Music Player in the car. Now, Jack is expecting the revised price. Unlike Jack, Terry is interested in Sports car with Music Player with Fog Light. 
 
 As a developer, we need to build a software solution to this problem statement where requirement can change anytime and any combination of features could be requested by the user. Moreover, system should be flexible enough to accommodate new features arrive if any.
 
@@ -55,7 +55,7 @@ class SuvWithMusicFogLight extends SuvWithMusic{
 These subclasses are created possible combination of features of a car.
 
 **What the problem with this code?**  
-Above solution will work fine if we have limited number for features but it won't work for more than two features or unknown features. This will lead to Class explosion if we try to create subclasses considering all possible combination of features.
+Above solution will work fine if we have limited number of features but it won't work for more than two features or unknown features. This will lead to Class explosion if we try to create subclasses considering all possible combination of features.
 
 Let's fix this.
 

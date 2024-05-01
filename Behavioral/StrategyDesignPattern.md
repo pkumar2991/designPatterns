@@ -3,7 +3,7 @@
 ### Definition
 >The Strategy Design Pattern defines a family of algorithms, encapsulating each one, and making them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
 
-### Problem
+### Problem Statement
 In the  current era, everything is data driven  which results huge volume of data getting generated every second. These data must be stored somewhere. So, storing data is a major problem for giant companies. So, they compress the file before storing them to the storage and uncompress them on demand. They use different file compression technique for this purpose.
 
 There could be many compression techniques. Let's build a design for a client to use these techniques.
