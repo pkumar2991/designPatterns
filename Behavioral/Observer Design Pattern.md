@@ -2,6 +2,13 @@
 ### Definition
 >The Observer design pattern is a behavioral design pattern where an object, known as the subject or observable, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods. This pattern is commonly used to implement distributed event handling systems, where a subject needs to notify multiple observers about changes in its state.
 
+`The observer pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.`
+
+### Components
+1. Subject - Object which is being observed by the observer.
+2. Concrete Subject - Implementation classes of the Subject interface.
+3. Observer - An object which observes the Subject.
+4. Concrete Observer - Implementation classes of the Observer interface.
 ### Problem Statement
 Build a system which should notify users when the stock of the asked product is available. For instance, an user is looking for a smart tv and AC to purchase it online from E-commerce website but it's not available in the stock. The website provides a feature to allow user to subscribe a notification channel. It sends notification to the user when the product is available in the stock.
 
@@ -12,7 +19,7 @@ Let's build this system using Observer Design Pattern.
 
 ### Better Approach
 
-Create Observable interface.
+Create Observable/Subject interface.
 ```java
 interface Observable {
 	void add(Observer observer);
@@ -216,5 +223,15 @@ Available Smart TV count: 20
 
 All observers of Smart TV and AC observers are notified as new arrivals of the product.
 
+### Inbuilt Java Observable in JDK
+java.util.Observable - A Class
+java.util.Observer - An Interface.
+
+#### Dark Sides of Inbuilt Java Observable
+- A class which has already extended a class cannot extend the Observable.
+- It's not an interface which mean we can write custom implementation of Observable.
+- SetChanged() method is protected which means it cannot be composed inside another class which violates the design principle - *Favor composition over inheritance.*
+#### Observer design patterns used in Java
+Listeners in Swing Package are nothing but observers. When a button is clicked the change is pushed to the listeners.
 ### Summary
 I believe we can use this design pattern wherever we need to perform some action based on some event. Event could be the availability of stock, completion of any business logic like payment or booking ticket and action could be send notification or trigger an event for other downstream application to proceed with workflow.

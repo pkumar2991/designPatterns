@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Creational/Abstract Factory Design Pattern.md",
+                "file": "Behavioral/Observer Design Pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Behavioral",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,12 +86,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 290.5,
-    "collapsed": true
+    "width": 290.5
   },
   "right": {
     "id": "0d60b9f5cd5b280f",
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Creational/Abstract Factory Design Pattern.md",
+                "file": "Behavioral/Observer Design Pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Creational/Abstract Factory Design Pattern.md",
+                "file": "Behavioral/Observer Design Pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Creational/Abstract Factory Design Pattern.md"
+                "file": "Behavioral/Observer Design Pattern.md"
               }
             }
           }
@@ -168,11 +168,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b27d6839cb5114c",
+  "active": "42b9877079b8b218",
   "lastOpenFiles": [
+    "Behavioral/StrategyDesignPattern.md",
     "Creational/Factory Design Pattern.md",
     "Creational/Abstract Factory Design Pattern.md",
-    "Behavioral/StrategyDesignPattern.md",
     "zcodes/bin/com/designpattern/creational/abstractfactory/FactoryProducer.class",
     "zcodes/bin/com/designpattern/creational/abstractfactory/MobileOsFactory.class",
     "zcodes/bin/com/designpattern/creational/abstractfactory/MobileOSFactory.class",
